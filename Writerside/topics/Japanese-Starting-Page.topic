@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="日本語" id="Japanese-Starting-Page">
+
+    <section-starting-page>
+        <title>日本語筆記</title>
+        <description>
+            /
+        </description>
+
+        <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
+        <spotlight>
+            <a href="" type="account" summary="This overrides the card summary of the topic">kouhou</a>
+        </spotlight>
+
+        <!--    Add several topics that are most important for this section.    -->
+        <primary>
+            <title>導航</title>
+            <a href="tango.md" summary="單字表">単語</a>
+            <a href="bunpo.md" summary="語法的詳細解釋與例句">文法</a>
+            <a href="taiwa.md" summary="日常對話中常用的内容">日常対話</a>
+        </primary>
+
+        <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
+        <secondary>
+            <title>/</title>
+            <a href="https://www.jetbrains.com/writerside/" summary="Powered By Writerside"/>
+        </secondary>
+
+    </section-starting-page>
+
+</topic>

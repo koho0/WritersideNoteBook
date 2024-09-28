@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE labels SYSTEM "https://resources.jetbrains.com/writerside/1.0/labels-list.dtd">
+<labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/labels.xsd">
+    <primary-label id="javascript" short-name="Javascript" name="Javascript" href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/What_is_JavaScript" color="tangerine">
+        訪問Javascript學習網站
+    </primary-label>
+
+    <primary-label id="sqlserver" short-name="SQL Server" name="SQL Server" href="https://learn.microsoft.com/zh-cn/sql/sql-server/?view=sql-server-ver16" color="strawberry">
+        訪問SQL Server官方文檔
+    </primary-label>
+
+    <primary-label id="css" short-name="CSS" name="CSS" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" color="blue">
+        訪問CSS學習網站
+    </primary-label>
+
+    <primary-label id="csharp" short-name="C#" name="C#" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp" color="purple">
+        訪問C#官方文檔
+    </primary-label>
+
+    <primary-label id="git" short-name="Git" name="Git" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp" color="red">
+        訪問Git
+    </primary-label>
+
+    <primary-label id="japanese" short-name="Japanese" name="Japanese" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp" color="strawberry">
+        訪問Git
+    </primary-label>
+
+    <secondary-label id="wip" name="WIP" color="purple">Work in progress</secondary-label>
+    <secondary-label id="beta" name="β" color="tangerine">測試</secondary-label>
+    <secondary-label id="experimental" name="Experimental" color="purple">實驗性</secondary-label>
+    <secondary-label id="2024.09.25" name="2024.09.25" color="blue">完成于2024.09.25</secondary-label>
+</labels>

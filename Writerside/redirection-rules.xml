@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="6a5d5b3c">
+        <description>Created after removal of "Starter" from NoteBook</description>
+        <accepts>starter.html</accepts>
+    </rule>
+    <rule id="17065e17">
+        <description>Created after removal of "Starting Page" from NoteBook</description>
+        <accepts>Starting-Page.html</accepts>
+    </rule>
+    <rule id="45c2ad37">
+        <description>Created after removal of "CodingNote" from NoteBook</description>
+        <accepts>CodingNote.html</accepts>
+    </rule>
+    <rule id="146720b1">
+        <description>Created after removal of "SQL" from NoteBook</description>
+        <accepts>SQL.html</accepts>
+    </rule>
+    <rule id="6ae855c8">
+        <description>Created after removal of "Javascript" from NoteBook</description>
+        <accepts>Javascript.html</accepts>
+    </rule>
+    <rule id="13d66820">
+        <description>Created after removal of "Section Starting Page" from 筆記</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="1c4bbbac">
+        <description>Created after removal of "文法" from 筆記</description>
+        <accepts>Bunpo-Starting-Page.html</accepts>
+    </rule>
+    <rule id="4b749980">
+        <description>Created after removal of "日本語" from 筆記</description>
+        <accepts>日本語.html</accepts>
+    </rule>
+</rules>
