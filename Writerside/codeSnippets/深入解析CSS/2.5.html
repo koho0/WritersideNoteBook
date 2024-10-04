@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after{
+            box-sizing: inherit;
+        }
+
+        body{
+            background-color: #709b90;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body * + * {
+            margin-top: 1.5rem;
+        }
+
+        .container{
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .site-nav{
+            display: flex;/*指定為彈性容器，子元素成爲彈性子元素*/
+            padding-left: 0;/*去除瀏覽器默認的左側内邊距和列表的項目符號*/
+            padding: .5em;/*給鏈接外的菜單容器添加内邊距*/
+            border-radius: .4em;
+            list-style-type: none;
+            background-color: #5f4b44;
+        }
+
+        .site-nav >li{
+            margin-top: 0;/*.site-nav類裏的li標簽覆蓋貓頭鷹選擇器的頂部外邊距*/
+        }
+
+        .site-nav >li + li{/*排除第一個選擇項，其他選擇項應用此樣式*/
+            margin-left: 1.5em;
+        }
+
+        .site-nav>.nav-right{
+            margin-left: auto;/*auto外邊距會填充所有可用空間*/
+        }
+
+        .site-nav>li>a{
+            display: block;/*讓鏈接成爲塊級元素，這樣就能撐開父元素的高度*/
+            padding: .5em 1em;/*給鏈接添加内邊距*/
+            background-color: #cc6b5a;
+            color: white;
+            text-decoration: none;/*覆蓋瀏覽器默認的鏈接文字的下劃綫樣式*/
+            border-radius: .4em;
+        }
+
+        .tile{
+            padding: 1.5em;
+            background-color: #fff;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .flex>* + *{
+            margin-top: 0;
+            margin-left: 1.5em;
+        }
+
+        .column-main{
+            flex: 2;
+        }
+
+        .column-sidebar{
+            flex: 1;
+            display: flex;/*對於外部的彈性盒子來説是彈性子元素，對於内部的元素而言是彈性容器*/
+            flex-direction: column;
+        }
+
+        .column-sidebar>.tile{
+            flex: 1;/*給内部子元素加上flex-grow*/
+        }
+
+        .login-form h3{
+            margin: 0;
+            font-size: .9em;
+            font-weight: bold;
+            text-align: right;
+            text-transform: uppercase;/*控制文本大小寫*/
+        }
+
+        .login-form input:not([type=checkbox]):not([type=radio]){
+            /*給文本類型的輸入框（不包括複選框和單選按鈕）添加樣式*/
+            display: block;/*元素單獨占據一行*/
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .login-form button{
+            margin-top: 1em;
+            border: 1px solid #cc6b5a;
+            background-color: white;
+            padding: .5em 1em;
+            cursor: pointer;
+        }
+
+        .centered{
+            text-align: center;
+        }
+
+        .cost{
+            display: flex;
+            justify-content: center;/*彈性子元素在主軸方向上居中*/
+            align-items: center;/*彈性子元素在副軸方向上居中*/
+            line-height: .7;
+        }
+
+        .cost>span{
+            margin-top: 0;
+        }
+
+        .cost-currency{
+            font-size: 2rem;
+        }
+        .cost-dollors{
+            font-size: 4rem;
+            align-items: start;
+        }
+        .cost-cents{
+            font-size: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .cta-button{
+            display: block;
+            background-color: #cc6b5a;
+            color: white;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ink</h1>
+        </header>
+        <nav>
+            <ul class="site-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Support</a></li>
+                <li class="nav-right">
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="flex">
+            <div class="column-main tile">
+                <h1>Team collaboration done right</h1>
+                <p>Thousands of teams from all over the       
+                    world turn to <b>Ink</b> to communicate    
+                    and get things done.</p>   
+            </div>
+            <div class="column-sidebar">
+                <div class="tile">
+                    <form action="" class="login-form">
+                        <h3>Login</h3>
+                        <p>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username">
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </p>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="tile centered">
+                    <small>Starting at</small>
+                    <div class="cost">
+                        <span class="cost-cents">$</span>
+                        <span class="cost-currency">20</span>
+                        <span class="cost-dollars">.00</span>
+                    </div>
+                    <a href="" class="cta-button">
+                        Sign up
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
