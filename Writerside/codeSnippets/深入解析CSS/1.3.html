@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        ::before,
+        ::after{
+            /*这种行为可能会破坏第三方css的样式*/
+            box-sizing: border-box;/*给页面上所有元素和伪元素设置盒模式*/
+        }
+
+        :root{
+            box-sizing: border-box;/*将根元素设置为border-box*/
+        }
+
+        *,
+        ::before,
+        ::after{
+            box-sizing: inherit;/*强制其他元素和伪元素继承盒模型*/
+        }
+
+        .third-party-component{
+            box-sizing: content-box;/*选中第三方组件容器，并恢复其盒模式*/
+        }
+
+        body {
+            background-color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 1em 1.5em;
+            color: #fff;
+            background-color: #0072b0;
+            border-radius: .5em;
+        }
+
+        main {
+            display: block;
+        }
+
+        .container{
+            /* display: table;让容器布局像表格一样 */
+            display: flex;
+            width: 100%;
+        }
+
+        .main {
+            /* display: table-cell;让列布局像表格的单元格一样 */
+            /* float: left; */
+            width: 70%;
+            padding: 1em 1.5em;
+            background-color: #fff;
+            border-radius: .5em;
+        }
+
+        .sidebar{
+            /* display: table-cell; */
+            box-sizing: border-box;/*现在宽度中包含内边距，所以总宽度不会超过100%*/
+            /* float: left; */
+            width: calc(30%);/*使用table后，列边距不再生效*/
+            margin-left: 1.5em;
+            padding: 1.5em;
+            margin-top: 0; /*移除猫头鹰选择器带来的额外顶部外边距*/
+            background-color: #fff;
+            border-radius: .5em;
+        }
+
+        .button-link{
+            display: block;
+            padding: 0.5em;
+            color: #fff;
+            background-color: #0090c9;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .sponsor-link{
+            display: block;
+            color: #0072b0;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .button-link+.button-link{
+            /* margin-top: 1.5em;只给紧跟在其他buttonlink后面的buttonlink加上顶部外边距 */
+        }
+
+        body * + * {
+            margin-top: 1.5em;/*给所有相邻的元素加上上边距*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Franklin Running Club</h1>
+    </header>
+
+    <div class="container">
+        <main class="main">
+            <h2>Come join us</h2>
+            <p>
+                The Franklin Running club meets at 6:00pm every Thursday
+                at the town square. Runs are three to five miles, at your
+                own pace.
+            </p>
+        </main>
+        <aside class="sidebar">
+           <a href="" class="button-link">
+                follow us on Twitter
+           </a>
+           <a href="" class="button-link">
+            like us on Facebook
+           </a>
+           <a href="" class="sponsor-link">
+            become a sponsor
+           </a>
+        </aside>
+    </div>
+</body>
+
+</html>
