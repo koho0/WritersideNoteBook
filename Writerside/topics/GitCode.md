@@ -23,3 +23,10 @@ git remote add origin https://github.com/koho0/WritersideNote
 git push -u origin main
 ```
 {collapsible="true" collapsed-title="推送项目到github"}
+
+
+# 设置全局 Git 用户名
+git config --global user.name "Your Name"
+
+# 设置全局 Git 邮箱
+git config --global user.email "your.email@example.com"
