@@ -277,3 +277,124 @@ larmlogs.forEach(data => {
   }
 ```
 {collapsible="true" collapsed-title="foreach循环(JS)"}
+
+
+在 Vue 项目中使用 Tailwind CSS 可以让你快速构建美观的用户界面。以下是一个简单的步骤指南：
+
+1. **创建 Vue 项目**：
+   如果你还没有 Vue 项目，可以使用以下命令创建一个新的 Vue 项目：
+   ```bash
+   npm create vue@latest
+   cd your-project-name
+   ```
+
+2. **安装 Tailwind CSS**：
+   在你的项目目录中，运行以下命令来安装 Tailwind CSS 及其依赖项：
+   ```bash
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   ```
+
+3. **配置 Tailwind CSS**：
+   在 `tailwind.config.js` 文件中，添加你项目中所有模板文件的路径：
+   ```javascript
+   module.exports = {
+     content: [
+       "./index.html",
+       "./src/**/*.{vue,js,ts,jsx,tsx}",
+     ],
+     theme: {
+       extend: {},
+     },
+     plugins: [],
+   }
+   ```
+
+4. **创建 CSS 文件**：
+   在 `src/assets` 文件夹中创建一个名为 `main.css` 的文件，并添加以下内容：
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+
+5. **导入 CSS 文件**：
+   在 `src/main.js` 中导入刚刚创建的 CSS 文件：
+   ```javascript
+   import './assets/main.css';
+   ```
+
+6. **运行项目**：
+   现在你可以运行项目并开始使用 Tailwind CSS 提供的类名来构建你的界面了：
+   ```bash
+   npm run dev
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+如果你的 Vue 项目使用 TypeScript，步骤会稍微有些不同，但总体流程还是类似的。以下是具体步骤：
+
+1. **创建 Vue 项目**：
+   如果你还没有 Vue 项目，可以使用以下命令创建一个新的 Vue 项目，并选择 TypeScript 选项：
+   ```bash
+   npm create vue@latest
+   cd your-project-name
+   ```
+
+2. **安装 Tailwind CSS**：
+   在你的项目目录中，运行以下命令来安装 Tailwind CSS 及其依赖项：
+   ```bash
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   ```
+
+3. **配置 Tailwind CSS**：
+   在 `tailwind.config.js` 文件中，添加你项目中所有模板文件的路径：
+   ```javascript
+   module.exports = {
+     content: [
+       "./index.html",
+       "./src/**/*.{vue,js,ts,jsx,tsx}",
+     ],
+     theme: {
+       extend: {},
+     },
+     plugins: [],
+   }
+   ```
+
+4. **创建 CSS 文件**：
+   在 `src/assets` 文件夹中创建一个名为 `main.css` 的文件，并添加以下内容：
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+
+5. **导入 CSS 文件**：
+   在 `src/main.ts` 中导入刚刚创建的 CSS 文件：
+   ```typescript
+   import './assets/main.css';
+   ```
+
+6. **运行项目**：
+   现在你可以运行项目并开始使用 Tailwind CSS 提供的类名来构建你的界面了：
+   ```bash
+   npm run dev
+   ```
+
+
+
+
