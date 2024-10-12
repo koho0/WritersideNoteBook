@@ -14,19 +14,19 @@
 
         <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
         <spotlight>
-            <a href="Japanese-Starting-Page.topic" type="account" summary="跳轉到日本語筆記頁面">日本語</a>
+            <a href="Japanese-Starting-Page.topic" type="world" summary="跳轉到日本語筆記頁面">日本語</a>
             <a href="CodeNote-Starting-Page.topic" type="mixed" summary="跳轉到程式碼筆記頁面">程式碼</a>
         </spotlight>
 
         <primary>
             <title>Get started</title>
-            <a href=""/>
+            <a href="" summary="程式碼筆記起始頁"/>
         </primary>
 
         <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
         <secondary>
-            <title>Explore advanced features</title>
-            <a href=""/>
+            <title>構建工具</title>
+            <a href="https://www.jetbrains.com/writerside/" summary="本筆記使用Jetbrains Writerside構建">Writerside</a>
         </secondary>
 
     </section-starting-page>

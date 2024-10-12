@@ -3,14 +3,30 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
     <build-profile instance="n">
+
         <variables>
+            <offline-docs>true</offline-docs>
             <primary-color>
                 strawberry
             </primary-color>
+            <link-color>frozen</link-color>
+            <custom-favicons>plumblossoms.png</custom-favicons>
+            <header-logo>plumblossoms.png</header-logo>
             <noindex-content>true</noindex-content>
+            <download-title>前往筆記原始程式碼</download-title>
+            <download-page>https://github.com/koho0/WritersideNoteBook</download-page>
+            <showDownloadButton>true</showDownloadButton>
+
         </variables>
+
+        <footer>
+            <copyright>KOHO 2024</copyright>
+            <social type="blog" href="https://blog.jetbrains.com/writerside/"/>
+            <social type="twitter" href="https://twitter.com/onwriterside"/>
+            <social type="facebook" href="https://www.facebook.com/JetBrains"/>
+        </footer>
+
     </build-profile>
 
 </buildprofiles>

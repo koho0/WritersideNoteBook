@@ -1,4 +1,4 @@
-# GitCode
+# Git程式碼
 
 <primary-label ref="git"/>
 <secondary-label ref="2024.09.25"/>

@@ -18,16 +18,20 @@
         訪問C#官方文檔
     </primary-label>
 
-    <primary-label id="git" short-name="Git" name="Git" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp" color="red">
-        訪問Git
+    <primary-label id="git" short-name="Git" name="Git" href="https://git-scm.com/book/zh-tw/v2" color="red">
+        訪問Git文檔
     </primary-label>
 
-    <primary-label id="japanese" short-name="Japanese" name="Japanese" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp" color="strawberry">
-        訪問Git
+    <primary-label id="japanese" short-name="Japanese" name="Japanese" href="https://www.japan.travel/tw/tw/" color="strawberry">
+        瞭解日本美景
+    </primary-label>
+
+    <primary-label id="vba" short-name="VBA" name="VBA" href="https://learn.microsoft.com/zh-tw/office/vba/library-reference/concepts/getting-started-with-vba-in-office" color="strawberry">
+        訪問Office VBA官方文檔
     </primary-label>
 
     <secondary-label id="wip" name="WIP" color="purple">Work in progress</secondary-label>
     <secondary-label id="beta" name="β" color="tangerine">測試</secondary-label>
     <secondary-label id="experimental" name="Experimental" color="purple">實驗性</secondary-label>
-    <secondary-label id="2024.09.25" name="2024.09.25" color="blue">完成于2024.09.25</secondary-label>
+    <secondary-label id="2024.09.25" name="2024.10.12" color="blue">完成于2024.10.12</secondary-label>
 </labels>

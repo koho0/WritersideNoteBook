@@ -8,14 +8,13 @@
     <section-starting-page>
         <title>日本語筆記</title>
         <description>
-            /
+            包含常用單字與語法
         </description>
 
         <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
         <spotlight>
-            <a href="" type="account" summary="This overrides the card summary of the topic">kouhou</a>
-
-            <a href="" type="account" summary="This overrides the card summary of the topic">kouhou</a>
+            <a href="Starting-Page.topic" type="start" summary="返回起始頁">起始頁</a>
+            <a href="CodeNote-Starting-Page.topic" type="mixed" summary="前往程式碼筆記">程式碼</a>
         </spotlight>
 
         <!--    Add several topics that are most important for this section.    -->
@@ -28,8 +27,8 @@
 
         <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
         <secondary>
-            <title>/</title>
-            <a href="https://www.jetbrains.com/writerside/" summary="Powered By Writerside"/>
+            <title>構建工具</title>
+            <a href="https://www.jetbrains.com/writerside/" summary="本筆記使用Jetbrains Writerside構建">Writerside</a>
         </secondary>
 
     </section-starting-page>

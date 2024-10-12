@@ -1,5 +1,10 @@
 # Flex彈性容器
 
+<primary-label ref="css"/>
+<secondary-label ref="2024.09.25"/>
+<secondary-label ref="beta"/>
+<secondary-label ref="experimental"/>
+
 ## 彈性容器屬性
 ![image.png](image.png)
 ![image_1.png](image_1.png)

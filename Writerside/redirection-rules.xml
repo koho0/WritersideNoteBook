@@ -38,4 +38,24 @@
         <description>Created after removal of "日本語" from 筆記</description>
         <accepts>日本語.html</accepts>
     </rule>
+    <rule id="3f4f2edb">
+        <description>Created after removal of "C#" from 筆記</description>
+        <accepts>Csharp-Starting-Page.html</accepts>
+    </rule>
+    <rule id="39f38729">
+        <description>Created after removal of "CSS" from 筆記</description>
+        <accepts>CSS-Starting-Page.html</accepts>
+    </rule>
+    <rule id="2e38af63">
+        <description>Created after removal of "Javascript" from 筆記</description>
+        <accepts>Javascript-Starting-Page.html</accepts>
+    </rule>
+    <rule id="3e5472d2">
+        <description>Created after removal of "SQL" from 筆記</description>
+        <accepts>SQL-Starting-Page.html</accepts>
+    </rule>
+    <rule id="3074d22e">
+        <description>Created after removal of "SQL" from 筆記</description>
+        <accepts>SQL.html</accepts>
+    </rule>
 </rules>

@@ -13,89 +13,27 @@
 
         <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
         <spotlight>
-            <a href="" type="account" summary="This overrides the card summary of the topic">C#</a>
-            <a href="" type="mixed" summary="This overrides the card summary of the topic">SQL</a>
+            <a href="Starting-Page.topic" type="start" summary="返回起始頁">起始頁</a>
+            <a href="Japanese-Starting-Page.topic" type="world" summary="前往日本語筆記">日本語</a>
         </spotlight>
 
         <!--    Add several topics that are most important for this section.    -->
         <primary>
-            <title>Get started</title>
-            <a href=""/>
-            <a href="" summary="With a custom card summary"/>
-            <a href="">Custom card title</a>
-            <a href="" summary="With a custom card summary">Custom card title</a>
+            <title>筆記列表</title>
+            <a href="VBA.md" summary="用Visual Basic for Applications (VBA) for Office 來執行重複性工作並完成更多工作，這是一種簡單但功能強大的程式設計語言，可用來擴充 Office 應用程式">VBA程式碼</a>
+            <a href="Git.md" summary="Git命令行是一個功能強大的工具，允許開發者高效地管理和協作處理代碼版本. 它提供了豐富的命令集，支持從簡單的提交到複雜的分支操作">Git指令碼</a>
+            <a href="CSharp.md" summary="C#是一種由微軟開發的多用途編程語言，廣泛用於桌面應用、網站和遊戲開發. 它結合了C++的強大功能和Java的簡潔性，提供了安全性和高效性">C#程式碼</a>
+            <a href="CSS.md" summary="CSS（層疊樣式表）是一種用於控制網頁外觀和佈局的語言，使得網頁設計更加美觀和有組織. 它允許開發者通過簡單的規則定義文本、顏色、佈局和動畫等樣式">CSS程式碼</a>
+            <a href="JavaScript.md" summary="JavaScript是一種強大的腳本語言，可以在網頁上實現動態內容更新、交互式地圖和動畫效果. 它是Web開發的核心技術之一，與HTML和CSS一起構建現代網頁">JavaScript程式碼</a>
+            <a href="SQL.md" summary="SQL（結構化查詢語言）是一種用於管理和操作關係數據庫的聲明性語言. 它允許用戶通過簡單的查詢語句高效地檢索、插入、更新和刪除數據">SQL程式碼</a>
         </primary>
 
         <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
         <secondary>
-            <title>Explore advanced features</title>
-            <a href=""/>
-            <a href="" summary="With a custom card summary"/>
-            <a href="">Custom card title</a>
-            <a href="" summary="With a custom card summary">Custom card title</a>
+            <title>構建工具</title>
+            <a href="https://www.jetbrains.com/writerside/" summary="本筆記使用Jetbrains Writerside構建">Writerside</a>
         </secondary>
 
-        <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
-        <misc>
-            <cards>
-                <title>Other relevant topics as wide cards</title>
-                <a href=""/>
-                <a href="" summary="With a custom card summary"/>
-                <a href="">Custom card title</a>
-                <a href="" summary="With a custom card summary">Custom card title</a>
-            </cards>
-
-            <cards narrow="true">
-                <title>Other relevant topics as narrow cards</title>
-                <a href=""/>
-                <a href=""/>
-                <a href="" summary="With a custom card summary"/>
-                <a href="">Custom card title</a>
-                <a href="">Custom card title</a>
-                <a href="" summary="With a custom card summary">Custom card title</a>
-            </cards>
-
-            <links>
-                <group>
-                    <title>Other related topics as links</title>
-                    <a href=""/>
-                    <a href="" summary="With a custom card summary"/>
-                    <a href="">Custom card title</a>
-                    <a href="" summary="With a custom card summary">Custom card title</a>
-                </group>
-                <group>
-                    <title>Two in a row</title>
-                    <a href=""/>
-                    <a href="" summary="With a custom card summary"/>
-                    <a href="">Custom card title</a>
-                    <a href="" summary="With a custom card summary">Custom card title</a>
-                </group>
-            </links>
-
-            <links narrow="true">
-                <group>
-                    <title>More related topics</title>
-                    <a href=""/>
-                    <a href="" summary="With a custom card summary"/>
-                    <a href="">Custom card title</a>
-                    <a href="" summary="With a custom card summary">Custom card title</a>
-                </group>
-                <group>
-                    <title>Three in a row</title>
-                    <a href=""/>
-                    <a href=""/>
-                    <a href="">Custom card title</a>
-                    <a href="">Custom card title</a>
-                </group>
-                <group>
-                    <title>Each group is narrow</title>
-                    <a href=""/>
-                    <a href=""/>
-                    <a href="">Custom card title</a>
-                    <a href="">Custom card title</a>
-                </group>
-            </links>
-        </misc>
     </section-starting-page>
 
 </topic>
